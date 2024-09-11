@@ -7,9 +7,9 @@ import { HashRouter } from "react-router-dom";
 import store from "./Redux/Store"; // Ensure correct import path for store
 
 createRoot(document.getElementById("root")).render(
-  <Provider store={store}>
-    <HashRouter>
-      <App />
-    </HashRouter>
+  <HashRouter>
+  <Provider store={store}>    
+      <App />    
   </Provider>
+  </HashRouter>
 );
